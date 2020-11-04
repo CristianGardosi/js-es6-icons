@@ -9,7 +9,8 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trispace&display=swap" rel="stylesheet"> 
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
      <title>FONTICON ECMASCRIPT 6</title>
 
@@ -27,7 +28,10 @@
 
         <div class="search">
             <!-- La label è un breve testo di accompagnamento al mio input (select) che ne spiega la funzione -->
-            <label for="type">Filter your icon by type!</label>
+            <label for="type">
+                <span>Filter your icon by type!</span> 
+                <i class="fas fa-icons"></i>
+            </label>
             <!-- Grazie al tag <select> è possibile costruire dei menu di opzioni. In questo caso ciascuna voce deve essere compresa all’interno del tag <option> (la chiusura del tag è opzionale) e il valore deve essere specificato attravero l’attributo “value”. In HTML inserisco solo la voce all in option, le altre le genero in maniera dinamica grazie a JS -->
             <select name="type" id="type">
                 <option value="all">All</option>
