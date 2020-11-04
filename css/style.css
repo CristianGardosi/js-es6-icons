@@ -3,3 +3,78 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Abril Fatface', cursive;
+}
+
+/* LAYOUT */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    /* Almeno grande come la mia viewport con la sezione icons gestita con flex-grow */
+    min-height: 100vh;
+}
+/* header style */
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(2,0,36,1) 2%, rgba(9,121,96,1) 60%, rgba(0,212,255,1) 100%);
+}
+
+.header-logo .logo img{
+    max-width: 100px;
+}
+/* Search area style */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-transform: uppercase;
+    background: #030f2c;
+    color: #fff;
+}
+
+.search label {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.search select {
+    width: 70px;
+    height: 40px;
+    font-size: 15px;
+}
+
+/* Icons area style */
+.icons {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    /* Andare a capo con le icons */
+    flex-wrap: wrap;
+    /* Il default è quello di occupare l'interezza della pagina (stretch), ma io voglio che i container delle icons prendano l'altezza da me indicata ovvero quella dell'icon stessa e del suo padding */
+    align-content: flex-start;
+    padding: 20px;
+    background: #030f2c;
+}
+
+.icons .icon {
+    /* Sei icone per linea, meno 20px che poi distribuisco 10 a sx e 10 a dx per marginare */
+    flex-basis: calc(100% / 6 - 20px);
+    /* 20px top e bottom e 10px dx e sx */
+    margin: 20px 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.icons .icon i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}

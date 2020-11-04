@@ -3,20 +3,57 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>FONTICON ECMASCRIPT 6</title>
+     <title>FONTICON ECMASCRIPT 6</title>
+
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="app-container">
+
+        <header class="header-logo">
+            <div class="logo">
+                <img src="./img/logo.png" alt="LOGO">
+            </div>
+        </header>
+
+        <div class="search">
+            <!-- La label è un breve testo di accompagnamento al mio input (select) che ne spiega la funzione -->
+            <label for="type">Filter your icon by type!</label>
+            <!-- Grazie al tag <select> è possibile costruire dei menu di opzioni. In questo caso ciascuna voce deve essere compresa all’interno del tag <option> (la chiusura del tag è opzionale) e il valore deve essere specificato attravero l’attributo “value”. In HTML inserisco solo la voce all in option, le altre le genero in maniera dinamica grazie a JS -->
+            <select name="type" id="type">
+                <option value="all">All</option>
+            </select>
+        </div>
+
+        <div class="icons">
+<!-- 
+            <div class="icon">
+                <i class="fab fa-reddit-alien"></i>
+                <div class="icon-name">
+                    Alien
+                </div>
+            </div> -->
+
+        </div>
+
     </div>
 
 
-    
+
+
+
+
+
+    <!-- JS -->
 
     <!-- JQuery -->
     <script
@@ -24,7 +61,6 @@
 		    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous">
     </script>
-
     <!-- Foglio JS -->
     <script src="./js/script.js"></script>
 
